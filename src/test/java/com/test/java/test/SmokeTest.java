@@ -8,10 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.itexico.weblayer.Application;
 import com.itexico.weblayer.controller.HomeController;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes=Application.class)
 public class SmokeTest {
 
 	@Autowired
